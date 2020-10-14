@@ -29,12 +29,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startNextButtotPressed() {
-        if redLightView.alpha == 0.2 {
+        if redLightView.alpha == 0.2,
+           yellowLightView.alpha == 0.2,
+           greenLightView.alpha == 0.2 {
+        } else {
             redLightView.alpha = 1
             startNextButton.setTitle("Next", for: .normal)
+        };
+        /*if redLightView.alpha == 1,
+              yellowLightView.alpha == 0.2,
+              greenLightView.alpha == 0.2 {
         } else {
-            
-        }
+            redLightView.alpha = 0.2
+            yellowLightView.alpha = 1
+            greenLightView.alpha = 0.2
+        } */
+    
     }
     
 }

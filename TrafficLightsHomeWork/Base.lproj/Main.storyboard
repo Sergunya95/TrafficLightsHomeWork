@@ -16,13 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xu-aE-BIP">
-                                <rect key="frame" x="157" y="112" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xu-aE-BIP">
+                                <rect key="frame" x="157" y="198" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0uJ-pf-0EY"/>
+                                    <constraint firstAttribute="width" constant="100" id="MOK-nJ-Wfb"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-Tt-wEj">
-                                <rect key="frame" x="97" y="664" width="220" height="60"/>
+                                <rect key="frame" x="97" y="762" width="220" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="VCW-C1-LXD"/>
@@ -35,22 +38,34 @@
                                     <action selector="startNextButtotPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3v-RT-2rg"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeB-7W-IGk">
-                                <rect key="frame" x="157" y="471" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeB-7W-IGk">
+                                <rect key="frame" x="157" y="458" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="I5S-SG-fXw"/>
+                                    <constraint firstAttribute="height" constant="100" id="rhr-kv-kyz"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YqT-D7-Wgj">
-                                <rect key="frame" x="157" y="288" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqT-D7-Wgj">
+                                <rect key="frame" x="157" y="328" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XyW-rE-Sqe"/>
+                                    <constraint firstAttribute="width" constant="100" id="mxD-52-ApG"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
+                            <constraint firstItem="AeB-7W-IGk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="5Hb-zH-eVr"/>
                             <constraint firstItem="LdR-Tt-wEj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dty-Nv-gv7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LdR-Tt-wEj" secondAttribute="bottom" constant="138" id="yFu-WX-End"/>
+                            <constraint firstItem="7xu-aE-BIP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZRP-Ne-jZC"/>
+                            <constraint firstItem="7xu-aE-BIP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="krh-rS-nq8"/>
+                            <constraint firstItem="AeB-7W-IGk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mbW-nB-Hxc"/>
+                            <constraint firstItem="YqT-D7-Wgj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="pa9-2S-FWC"/>
+                            <constraint firstItem="YqT-D7-Wgj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y27-a7-Ejo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LdR-Tt-wEj" secondAttribute="bottom" constant="40" id="yFu-WX-End"/>
                         </constraints>
                     </view>
                     <connections>
