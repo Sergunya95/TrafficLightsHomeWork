@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         yellowLightView.alpha = 0.2
         greenLightView.alpha = 0.2
         
-        redLightView.layer.cornerRadius = 50
-        yellowLightView.layer.cornerRadius = 50
-        greenLightView.layer.cornerRadius = 50
+        redLightView.layer.cornerRadius = redLightView.frame.height / 2
+        yellowLightView.layer.cornerRadius = yellowLightView.frame.width / 2
+        greenLightView.layer.cornerRadius = greenLightView.frame.height / 2
         
         startNextButton.layer.cornerRadius = 10
     }
@@ -31,6 +31,16 @@ class ViewController: UIViewController {
     @IBAction func startNextButtotPressed() {
         redLightView.alpha = 1
         startNextButton.setTitle("Next", for: .normal)
+         if redLightView.alpha == 1 {
+            redLightView.alpha = 0.2
+            yellowLightView.alpha = 1
+        } else if yellowLightView.alpha == 1 {
+            yellowLightView.alpha = 0.2
+            greenLightView.alpha = 1
+        } else if greenLightView.alpha == 1 {
+            greenLightView.alpha = 0.2
+            redLightView.alpha = 1
+        }
     }
+   
 }
-    
